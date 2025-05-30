@@ -1,1 +1,6 @@
+pandas==2.2.3
+SQLAlchemy==2.0.41
+jupyterlab==4.4.2
+ipython-sql==0.5.0
+jupyterlab-git==0.51.1
 
