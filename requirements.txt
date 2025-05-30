@@ -1,1 +1,9 @@
+pandas (data cleaning & CSV I/O)
 
+SQLAlchemy (SQLite modeling & to_sql)
+
+jupyterlab (notebook environment)
+
+ipython-sql (%%sql magic)
+
+jupyterlab-git (Git integration in JupyterLab)
