@@ -55,6 +55,7 @@ Documentation: Markdown, Jupyter Notebooks
 Repository Structure
 
 profit-performance-dashboard:
+
 ├── data/
 │   ├── raw/                              # Original Superstore CSV
 │   └── processed/                        # Cleaned CSV and exports 
