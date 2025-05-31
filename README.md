@@ -55,7 +55,7 @@ Documentation: Markdown, Jupyter Notebooks
 Repository Structure
 
 profit-performance-dashboard:
-
+'''
 ├── data/
 │   ├── raw/                              # Original Superstore CSV
 │   └── processed/                        # Cleaned CSV and exports 
@@ -67,7 +67,7 @@ profit-performance-dashboard:
 ├── reports/                              # Executive summary (.pdf)
 ├── requirements.txt                      # Python dependencies
 └── README.md
-
+'''
 Installation & Setup
 
 Clone the repository
