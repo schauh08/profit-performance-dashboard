@@ -4,7 +4,7 @@ README.md
 
 Profit Performance Dashboard
 
-An end-to-end interactive dashboard built in Power BI that visualizes profit trends, identifies top-performing categories and products, and enables dynamic filtering by region to view profit trends overtime.
+An end-to-end interactive dashboard built in Power BI that visualizes profit trends, identifies top-performing categories and products, and enables filtering by region to view profit trends overtime.
 
 Table of Contents
 
@@ -28,11 +28,11 @@ Table of Contents
 
 Project Overview
 
-Objective: Provide stakeholders with a comprehensive view of profit performance across time, product categories, and regions.
+Objective: Provide executives with a comprehensive view of profit performance across time, product categories, and regions.
 
 Data Source: Superstore dataset (~50K rows) containing order details, product information, and profit metrics.
 
-Outcome: Interactive dashboard that reduced manual reporting effort by 40% and highlighted key profit drivers.
+Outcome: Interactive dashboard that reduced manual reporting effort and highlighted profit trends over time by region and key profit drivers by category and name.
 
 Features
 
@@ -40,9 +40,7 @@ Trend analysis of profit over time (yearly/monthly/quarterly).
 
 Top 3 profit-driving categories and top 5 products within each category.
 
-Drill-down filtering by region, category, and date range.
-
-KPI cards for quick snapshot of overall performance metrics.
+Filtering by region, and product name.
 
 Tech Stack
 
@@ -56,16 +54,15 @@ Documentation: Markdown, Jupyter Notebooks
 
 Repository Structure
 
-sales-performance-dashboard/
+profit-performance-dashboard/
 ├── data/
 │   ├── raw/                   # Original Superstore CSV
 │   └── processed/             # Cleaned CSV and exports (e.g., top3_by_profit.csv)
 ├── notebooks/                 # Jupyter notebooks for ETL, analysis, and SQL
-│   ├── 01_inspect.ipynb
-│   ├── 02_clean.ipynb
-│   └── 03_build_tables.ipynb
-├── dashboard/                 # Optional Dash app or BI exports
-├── reports/                   # Executive summary
+│   ├── 01-inspection.ipynb    
+│   ├── 02-table-creation.ipynb 
+├── dashboard/                 # Final Power BI dashboard (.pbix)
+├── reports/                   # Executive summary (.pdf)
 ├── sales-performance-dashboard.pbix  # Power BI dashboard file
 ├── requirements.txt           # Python dependencies
 └── README.md
@@ -74,8 +71,8 @@ Installation & Setup
 
 Clone the repository
 
-git clone https://github.com/<your-username>/sales-performance-dashboard.git
-cd sales-performance-dashboard
+git clone https://github.com/schauh08/profit-performance-dashboard.git
+cd profit-performance-dashboard
 
 Create & activate a virtual environment
 
@@ -95,13 +92,11 @@ Usage
 
 Run notebooks in order:
 
-01_inspect.ipynb for data inspection
+01-inspection.ipynb for data inspection, cleaning, and exporting superstore_clean.csv
 
-02_clean.ipynb for cleaning and exporting superstore_clean.csv
+02-table-creation.ipynb for building SQLite tables and exporting category_data.csv
 
-03_build_tables.ipynb for building SQLite tables and exporting top3_by_profit.csv
-
-Open sales-performance-dashboard.pbix in Power BI Desktop to explore the dashboard.
+Open profit-performance-dashboard.pbix in Power BI Desktop to explore the dashboard.
 
 File Descriptions
 
@@ -109,19 +104,17 @@ data/raw/: Original downloaded Superstore CSV
 
 data/processed/superstore_clean.csv: Cleaned and filtered dataset
 
-data/processed/top3_by_profit.csv: Export of top-3 categories and top-5 products by profit
+data/processed/category_data.csv: Export of top-3 categories and top-5 products by profit
 
 notebooks/: Step-by-step ETL and analysis
 
-sales-performance-dashboard.pbix: Final interactive Power BI dashboard
+profit-performance-dashboard.pbix: Final interactive Power BI dashboard
 
 reports/: One-page executive summary PDF
 
 Authors:
 
 Shaaf Chauhan – Data Analyst & Developer
-
-Email: shaafchauhan11554@gmail.com
 
 License
 
