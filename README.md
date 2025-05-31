@@ -54,17 +54,17 @@ Documentation: Markdown, Jupyter Notebooks
 
 Repository Structure
 
-profit-performance-dashboard/
+profit-performance-dashboard:
 ├── data/
-│   ├── raw/                   # Original Superstore CSV
-│   └── processed/             # Cleaned CSV and exports (e.g., top3_by_profit.csv)
-├── notebooks/                 # Jupyter notebooks for ETL, analysis, and SQL
+│   ├── raw/                              # Original Superstore CSV
+│   └── processed/                        # Cleaned CSV and exports 
+├── notebooks/                            # Jupyter notebooks for ETL, analysis, and SQL
 │   ├── 01-inspection.ipynb    
 │   ├── 02-table-creation.ipynb 
-├── dashboard/                 # Final Power BI dashboard (.pbix)
-├── reports/                   # Executive summary (.pdf)
-├── sales-performance-dashboard.pbix  # Power BI dashboard file
-├── requirements.txt           # Python dependencies
+├── dashboard/
+|   ├── sales-performance-dashboard.pbix  # Power BI dashboard file
+├── reports/                              # Executive summary (.pdf)
+├── requirements.txt                      # Python dependencies
 └── README.md
 
 Installation & Setup
@@ -104,7 +104,7 @@ data/raw/: Original downloaded Superstore CSV
 
 data/processed/superstore_clean.csv: Cleaned and filtered dataset
 
-data/processed/category_data.csv: Export of top-3 categories and top-5 products by profit
+data/processed/category_data.csv: Export of top-3 categories and top-5 products by profit per category
 
 notebooks/: Step-by-step ETL and analysis
 
